@@ -84,7 +84,7 @@ header{
   align-self: flex-end;  
     position: fixed;
     height: 100%;
-    margin-top: 6.15rem;
+    margin-top: 4.8rem;
     box-shadow: 0.1rem 0.1rem 0.2rem;
     background: var(--secondary-color);
     padding: 2rem;
@@ -124,7 +124,7 @@ header{
 }
 
 main{
-    margin-top: 6.13rem;
+    margin-top: 4.8rem;
     display: flex;
     flex-direction: column;
     
@@ -139,7 +139,7 @@ main{
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    padding: 2rem 4rem;
+    padding: 4rem 2rem;
 }
 
 .s1-division-1{
@@ -156,6 +156,7 @@ main{
     border-radius: 1rem;
     border: 0.1rem solid var(--primary-color);
     font-size: 1.05rem;
+    cursor: pointer;
 }
 
 .cta-button:active{
@@ -164,7 +165,7 @@ main{
 
 .section-2{
     background: var(--primary-color);
-    padding: 1.5rem 3rem;
+    padding:  3rem 1.5rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -184,13 +185,14 @@ gap: 2rem;
 
 .srv-content{
     line-height: 1.6;
+    padding-top: 0.7rem;
 }
 
 .section-3, .section-4{
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    padding: 1.5rem 2rem;
+    padding: 3rem 1.5rem;
 }
 
 .s3-heading{
@@ -218,6 +220,7 @@ gap: 2rem;
     background: var(--primary-color);
     color: var(--secondary-color);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .bi-plus:active{
@@ -293,10 +296,12 @@ gap: 2rem;
 @keyframes emerge{
     0%{
         translate: 0 3rem;
+        opacity: 0;
     }
     
     100%{
         translate: 0 -1.5rem;
+        opacity: 1;
     }
 }
 
@@ -305,4 +310,127 @@ gap: 2rem;
     animation-fill-mode: forwards;
     animation-duration: 0.8s;
     animation-timing-function: ease;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    padding: 2rem;
+}
+
+.sitemaps, .maps{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.sitemaps h3{
+    color: var(--primary-color);
+}
+
+.maps{
+    list-style-type: none;
+    gap: 0.9rem;
+}
+
+.map a:link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0.2rem;
+}
+
+.map a:visited{
+    border-bottom: 0.1rem dotted var(--accent-color);
+    color: black;
+}
+
+.map a:hover, .map a:active{
+    color: var(--accent-color);
+}
+
+.social-contact{
+    color: var(--accent-color);
+}
+
+.bi-twitter, .bi-facebook, .bi-instagram{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.author:link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.author:hover{
+    border-bottom: 0.1rem solid var(--accent-color);
+}
+
+@media screen and (min-width:922px){
+    .mobile-menu{
+        display: none;
+    }
+    
+    .desktop-menu{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    
+    .desktop-menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        gap: 1.6rem;
+        padding: 1rem;
+        translate: 0 -0.6rem;
+    }
+    
+    .menu-btn{
+        display: none;
+    }
+    
+    .d-item a:link{
+      color: var(--secondary-color);
+        text-decoration: none;
+    }
+    
+    .d-item a:visited{
+        border-bottom: 0.1rem dotted var(--accent-color);
+        color: var(--secondary-color);
+    }
+    
+    .d-item a:hover, .d-tem a:active{
+        color: var(--accent-color);
+        font-size: 1.4rem;
+    }
+    
+    .s4-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    
+    .delighted-customers{
+        margin: auto 0 auto 0;
+    }
+    
+    .section-1{
+        padding: 5rem 2rem;
+    }
+    
+    .services{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
