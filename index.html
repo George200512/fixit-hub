@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles/style.css" />
   <meta name="description" content="A local mobile phone repair & accessories shop that fixes smartphones, tablets, and sells quality accessories.">
   <meta name="keywords" content="Fast, Reliable, Affordable, Professional, Trusted" >
-  <script src="scripts/jquery-3.7.1.min.css"></script>
- <script src="scripts/index.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+ <script src="scripts/index.js" defer="true"></script>
   <title>
    Fixit Hub - Home
   </title>
@@ -21,7 +21,7 @@
    <nav class="mobile-menu">
     <span class="bi bi-x"></span>
     <ul>
-    <li class="m-item"><a href="#">Services</a></li>
+    <li class="m-item"><a href="services.html">Services</a></li>
     <li class="m-item"><a href="#">Pricing</a></li>
     <li class="m-item"><a href="#">Shop</a></li>
     <li class="m-item"><a href="#">Testimonials</a></li>
@@ -35,7 +35,7 @@
   <section class="section-1">
    <nav class="desktop-menu">
     <ul>
-    <li class="d-item"><a href="#">Services</a></li>
+    <li class="d-item"><a href="services.html">Services</a></li>
     <li class="d-item"><a href="#">Pricing</a></li>
     <li class="d-item"><a href="#">Shop</a></li>
     <li class="d-item"><a href="#">Testimonials</a></li>
@@ -99,33 +99,33 @@ Prolong device lifespan and prevent unexpected breakdowns.</p>
    <h2 class="s3-heading">Why We Are Your Preferred Choice</h2>
    
    <ul class="reasons">
-    <li class="reason">
-     <h3 class="heading-box"><span class="heading">Expert Technicians</span> <span class="bi bi-plus"></span></h3>
+    <li class="reason" id="r1">
+     <h3 class="heading-box"><span class="heading">Expert Technicians</span> <span class="bi bi-plus plus" id="1" onclick="open_or_close(this.id)"></span></h3>
      <p class="content">Certified and experienced professionals handle your devices with care.</p>     
     </li>
     
     <li class="reason">
-     <h3 class="heading-box"><span class="heading">Fast & Reliable Service</span> <span class="bi bi-plus"></span></h3>
+     <h3 class="heading-box"><span class="heading">Fast & Reliable Service</span> <span class="bi bi-plus plus" id="2" onclick="open_or_close(this.id)"></span></h3>
      <p class="content">Quick turnaround without compromising quality.</p>     
     </li>
     
-    <li class="reason">
-     <h3 class="heading-box"><span class="heading">Affordable & Transparent Pricing</span> <span class="bi bi-plus"></span></h3>
+    <li class="reason" >
+     <h3 class="heading-box"><span class="heading">Affordable & Transparent Pricing</span> <span class="bi bi-plus plus" id="3" onclick="open_or_close(this.id)"></span></h3>
      <p class="content">No hidden fees; you know the cost upfront.</p>     
     </li>
     
-    <li class="reason">
-     <h3 class="heading-box"><span class="heading">Eco-Friendly Practices</span> <span class="bi bi-plus"></span></h3>
+    <li class="reason" >
+     <h3 class="heading-box"><span class="heading">Eco-Friendly Practices</span> <span class="bi bi-plus plus" id="4" onclick="open_or_close(this.id)"></span></h3>
      <p class="content">Responsible disposal and repair to reduce electronic waste.</p>     
     </li>
     
-    <li class="reason">
-     <h3 class="heading-box"><span class="heading">Customer Satisfaction Guaranteed</span> <span class="bi bi-plus"></span></h3>
+    <li class="reason" >
+     <h3 class="heading-box"><span class="heading">Customer Satisfaction Guaranteed</span> <span class="bi bi-plus plus" id="5" onclick="open_or_close(this.id)"></span></h3>
      <p class="content">We fix it right the first time, every time.</p>     
     </li>
     
     <li class="reason">
-     <h3 class="heading-box"><span class="heading">Wide Range of Services</span> <span class="bi bi-plus"></span></h3>
+     <h3 class="heading-box"><span class="heading">Wide Range of Services</span> <span class="bi bi-plus plus" id="6" onclick="open_or_close(this.id)"></span></h3>
      <p class="content">From electronics to appliances, we’ve got you covered.</p>     
     </li>
     
@@ -157,6 +157,10 @@ Prolong device lifespan and prevent unexpected breakdowns.</p>
     </div>
    </div>
   </section>
+  
+  <div class="bottom-to-top">
+   <span class="bi bi-arrow-up"></span>
+  </div>
  </main>
  
  <footer>

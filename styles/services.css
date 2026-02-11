@@ -1,0 +1,88 @@
+.previous-box{
+    margin-top: 5.8rem;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    border-bottom: 0.07rem solid;
+    display: none;
+}
+
+main{
+    margin-top: 7.9rem;
+}
+
+.back-btn:link, .back-btn:visited{
+    color: black;
+    cursor: pointer;
+}
+
+.services-heading{
+    color: var(--primary-color);
+    padding: 1.2rem 1.2rem .9rem;
+}
+
+.shrt-description{
+   padding: 1.2rem;
+line-height: 1.7;    
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem 1.2rem;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 2rem; 
+    transition: all 0.4s ease;
+}
+
+.icon-container{
+    font-size: 4rem;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.b-content{
+    line-height: 1.7;
+}
+
+.service:hover{
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--accent-color);
+}
+
+.service:active{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width:922px){
+    .previous-box{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    .services{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+    .services-heading{
+        margin-top: 1rem;
+    }
+}

@@ -27,6 +27,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--secondary-font);
     font-size: var(--font-size);
@@ -65,6 +69,7 @@ h1, h2, h3{
     cursor: pointer;
     font-size: 1.4rem;
     padding: 0.5rem;
+    transition: border 1s ease;
 }
 
 .menu-btn:active{
@@ -84,7 +89,7 @@ header{
   align-self: flex-end;  
     position: fixed;
     height: 100%;
-    margin-top: 4.8rem;
+    margin-top: 5.8rem;
     box-shadow: 0.1rem 0.1rem 0.2rem;
     background: var(--secondary-color);
     padding: 2rem;
@@ -92,10 +97,13 @@ header{
     flex-direction: column;
     gap: 1.5rem;
     translate: 100% 0;
+    transition: translate 0.4s  linear;
+    z-index: 999;
 }
 
 .bi-x{
     align-self: flex-end;
+    transition: border 0.5s ease;
 }
 
 .bi-x:hover, .bi-x:active{
@@ -117,6 +125,7 @@ header{
     display: block;
     text-decoration: none;
     color: black;
+    transition: all 0.6s ease;
 }
 
 .mobile-menu ul li a:hover, .mobile-menu ul li a:active{
@@ -124,7 +133,7 @@ header{
 }
 
 main{
-    margin-top: 4.8rem;
+    margin-top: 5.8rem;
     display: flex;
     flex-direction: column;
     
@@ -157,6 +166,7 @@ main{
     border: 0.1rem solid var(--primary-color);
     font-size: 1.05rem;
     cursor: pointer;
+    transition: all 0.7s ease;
 }
 
 .cta-button:active{
@@ -214,17 +224,18 @@ gap: 2rem;
 }
 
 
-.bi-plus{
+.plus{
     border-radius: 50%;
     padding: .4rem;
     background: var(--primary-color);
     color: var(--secondary-color);
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.8s ease;
 }
 
-.bi-plus:active{
-    background: rgba(15, 23, 42, 0.5);
+.plus:active{
+    background-color: rgba(15, 23, 42, 0.5);
 }
 
 .content{
@@ -261,6 +272,7 @@ gap: 2rem;
     gap: 1rem;
     border-radius: 1rem;
     padding: 1.5rem;
+    transition: box-shadow 0.5s ease;
 }
 
 .head, .tail{
@@ -374,6 +386,21 @@ footer{
     border-bottom: 0.1rem solid var(--accent-color);
 }
 
+.bottom-to-top{
+    position: fixed;
+    left: 70%;
+    bottom: 15%;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--primary-color);
+    z-index: 999;
+    transition: opacity 0.4s ease;
+}
+
+.bottom-to-top:active{
+    opacity: 0.5;
+}
+
 @media screen and (min-width:922px){
     .mobile-menu{
         display: none;
@@ -403,6 +430,7 @@ footer{
     .d-item a:link{
       color: var(--secondary-color);
         text-decoration: none;
+        transition: all 0.6s ease;
     }
     
     .d-item a:visited{
