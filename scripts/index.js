@@ -1,10 +1,12 @@
 $(document).ready(function (event) {
 				$(".menu-btn").click(function (event){
+								$(".mobile-menu").css("display", "flex");
 								$(".mobile-menu").css("translate", "0 0");
 				});
 				
 				$(".bi-x").click(function (event){
 								$(".mobile-menu").css("translate", "100% 0");
+								$(".mobile-menu").css("display", "flex");
 				});
 				
 				
@@ -14,6 +16,15 @@ $(document).ready(function (event) {
 												behavior: "smooth"
 								});
 				});
+				
+				const observer = new IntersectionObserver(function(entries){
+								entries.forEach(e=>{
+												if (e.isIntersecting){
+																e.target.style.translate = "0";
+												}
+								});
+				});
+				observer.observe($(".delighted-customers")[0]);
 				
 });
 

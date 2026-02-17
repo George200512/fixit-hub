@@ -43,19 +43,80 @@ main{
     border: 0.03rem solid var(--primary-color);
     width: 100%;
     border-collapse: collapse;
+    box-shadow: 0.1rem 0.1rem 0.2rem;
 }
 
 .table-wrapper{
     overflow-x: auto;
-    padding: 2rem 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
 }
 
 thead{
     background: var(--primary-color);
     color: white;
+}
+
+thead tr th{
     padding: 1rem;
 }
 
-thead tr{
+tbody tr td{
+    white-space: nowrap;
+    padding: 1rem;
+    transition: all 0.6s ease;
+    vertical-align: middle;
+}
+
+tbody tr:hover{
+    box-shadow: 0.1rem 0.1rem 0.4rem var(--primary-color);
+    border-radius: 1rem;
+}
+
+tbody tr{
+    border-bottom: 0.1rem solid;
+}
+
+.section-2{
+    margin-top: 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.package{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.desc{
+    line-height: 1.6;
+}
+
+.popular{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: var(--secondary-color);
+    align-items: center;
+}
+
+.text{
+    color: var(--secondary-color);
+}
+
+.title{
+    padding: 1rem;
+    background: red;
+    border-radius: 1rem;
 }

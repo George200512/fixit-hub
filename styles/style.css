@@ -63,6 +63,8 @@ h1, h2, h3{
 .delighted-customers{
     width: 100%;
     border-radius: 2rem;
+    translate: 0 1rem;
+    transition: all 0.6s ease;
 }
 
 .menu-btn{
@@ -93,7 +95,7 @@ header{
     box-shadow: 0.1rem 0.1rem 0.2rem;
     background: var(--secondary-color);
     padding: 2rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1.5rem;
     translate: 100% 0;
@@ -305,24 +307,7 @@ gap: 2rem;
     box-shadow: 0.2rem 0.1rem 0.2rem var(--secondary-color);
 }
 
-@keyframes emerge{
-    0%{
-        translate: 0 3rem;
-        opacity: 0;
-    }
-    
-    100%{
-        translate: 0 -1.5rem;
-        opacity: 1;
-    }
-}
 
-.delighted-customers{
-    animation-name: emerge;
-    animation-fill-mode: forwards;
-    animation-duration: 0.8s;
-    animation-timing-function: ease;
-}
 
 footer{
     display: flex;
