@@ -9,7 +9,7 @@
 }
 
 main{
-    margin-top: 7.9rem;
+    margin-top: 5.8rem;
 }
 
 .back-btn:link, .back-btn:visited{
@@ -84,5 +84,9 @@ line-height: 1.7;
     
     .services-heading{
         margin-top: 1rem;
+    }
+    
+    main{
+        margin-top: 7.9rem;
     }
 }
