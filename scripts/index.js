@@ -24,7 +24,10 @@ $(document).ready(function (event) {
 												}
 								});
 				});
+				
+				if ($(".delighted-customers")[0]){
 				observer.observe($(".delighted-customers")[0]);
+				}
 				
 });
 

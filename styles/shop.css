@@ -10,6 +10,7 @@ main{
     right: 0;
     border-bottom: 0.07rem solid;
     display: none;
+    background: var(--secondary-color);
 }
 
 .section-1{
@@ -41,8 +42,8 @@ main{
     background: var(--secondary-color);
     padding: 1rem;
     border-radius: 0.5rem;
-    translate: 0 1rem;
-    transition: all 0.7s ease;
+    transform: translate(0, 1rem);
+    transition: all 0.4s ease;
     align-items: center;
     cursor: pointer;
 }
@@ -75,7 +76,7 @@ main{
     border-radius: 1.5rem;
     border-top: 0.2rem solid;
     border-bottom: 0.2rem solid;
-    margin: 2rem;
+    margin: 2rem auto;
 }
 
 .category h3{
@@ -120,4 +121,15 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+@media screen and (min-width:922px){
+    main{
+        margin-top: 7.9rem;
+    }
+    
+    .previous-box{
+        display: block;
+        margin-bottom: 1rem;
+    }
 }
