@@ -89,4 +89,8 @@ line-height: 1.7;
     main{
         margin-top: 7.9rem;
     }
+    
+    .mobile-menu{
+        display: none;
+    }
 }

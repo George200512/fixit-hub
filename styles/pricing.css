@@ -129,4 +129,8 @@ tbody tr{
     main{
         margin-top: 7.9rem;
     }
+    
+    .mobile-menu{
+        display: none;
+    }
 }
