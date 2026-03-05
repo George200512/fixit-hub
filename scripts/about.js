@@ -11,7 +11,7 @@ $(document).ready(function (event) {
 				},
 				{threshold: 0.3});
 				
-				$(".section-1 h2, .div-1 h2, .div-2 h2, .section-3 h2, .section-1 p, .div-2 p, .div-1 p, .section-3 p").each((idx, ele) => {
+				$(".section-1 h2, .section-3 h2, .section-1 p,  .section-3 p").each((idx, ele) => {
 								observer.observe(ele);
 				});
 				

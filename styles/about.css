@@ -28,14 +28,14 @@ main{
     border: 0.07rem dashed var(--accent-color);
 }
 
-.section-1 h2, .div-1 h2, .div-2 h2, .section-3 h2{
+.section-1 h2, /*.div-1 h2, .div-2 h2,*/ .section-3 h2{
     color: var(--primary-color);
     transform: translateY(2rem);
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.6s ease;
 }
 
-.section-1 p, .div-2 p, .div-1 p, .section-3 p{
+.section-1 p, /*.div-2 p, .div-1 p,*/ .section-3 p{
     color: black;
     transform: translateY(2rem);
     opacity: 0;
