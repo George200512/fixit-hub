@@ -1,0 +1,105 @@
+.previous-box{
+    margin-top: 5.8rem;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    border-bottom: 0.07rem solid;
+    display: none;
+}
+
+main{
+    margin-top: 5.8rem;
+    background: whitesmoke;
+}
+
+.back-btn:link, .back-btn:visited{
+    color: black;
+    cursor: pointer;
+}
+
+.s1{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+    margin-top: 2rem;
+    box-shadow: 0.1rem 0.2rem var(--accent-color);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.s1 h1{
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.s1 p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.096rem;
+}
+
+input{
+    height: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 0.5rem;
+    border: 0.1rem solid;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    transition: box-shadow 0.4s ease;
+}
+
+textarea{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    outline: none;
+    transition: box-shadow 0.4s ease;
+}
+
+button{
+    align-self: flex-start;
+    padding: 1.5rem;
+    background: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    transition: opacity 0.4s ease;
+    border-radius: 1.2rem;
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0.2rem 0.2rem;
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+.s2{
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    padding-right: 1.3rem;
+}
